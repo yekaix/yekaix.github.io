@@ -79,19 +79,19 @@
 
 
 
-<meta name="description" content="中国海洋大学计算机技术01方向硕士研究生2018年入学考试真题，第5-2题的程序填空。代码编写的比较巧妙，从维基百科上面查到的快速排序代码没有这个简洁，特此记录在这里，方便学习回忆。 1234567891011121314151617181920212223242526272829303132333435363738394041424344#include&amp;lt;stdio.h&amp;gt;int *b">
+<meta name="description" content="中国海洋大学计算机技术01方向硕士研究生2018年入学考试真题，第5-2题的程序填空。代码编写的比较巧妙，从维基百科上面查到的快速排序代码没有这个简洁，特此记录在这里，方便学习回忆。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="中国海洋大学2018年910真题-快速排序填空">
 <meta property="og:url" content="http://dirringx.github.io/2018/09/20/quick-sort/index.html">
 <meta property="og:site_name" content="叶开">
-<meta property="og:description" content="中国海洋大学计算机技术01方向硕士研究生2018年入学考试真题，第5-2题的程序填空。代码编写的比较巧妙，从维基百科上面查到的快速排序代码没有这个简洁，特此记录在这里，方便学习回忆。 1234567891011121314151617181920212223242526272829303132333435363738394041424344#include&amp;lt;stdio.h&amp;gt;int *b">
+<meta property="og:description" content="中国海洋大学计算机技术01方向硕士研究生2018年入学考试真题，第5-2题的程序填空。代码编写的比较巧妙，从维基百科上面查到的快速排序代码没有这个简洁，特此记录在这里，方便学习回忆。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://dirringx.github.io/images/quick-sort-result.png">
 <meta property="og:image" content="http://dirringx.github.io/images/yekai-wx.jpg">
-<meta property="og:updated_time" content="2018-09-21T03:49:20.615Z">
+<meta property="og:updated_time" content="2018-09-26T01:20:20.794Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="中国海洋大学2018年910真题-快速排序填空">
-<meta name="twitter:description" content="中国海洋大学计算机技术01方向硕士研究生2018年入学考试真题，第5-2题的程序填空。代码编写的比较巧妙，从维基百科上面查到的快速排序代码没有这个简洁，特此记录在这里，方便学习回忆。 1234567891011121314151617181920212223242526272829303132333435363738394041424344#include&amp;lt;stdio.h&amp;gt;int *b">
+<meta name="twitter:description" content="中国海洋大学计算机技术01方向硕士研究生2018年入学考试真题，第5-2题的程序填空。代码编写的比较巧妙，从维基百科上面查到的快速排序代码没有这个简洁，特此记录在这里，方便学习回忆。">
 <meta name="twitter:image" content="http://dirringx.github.io/images/quick-sort-result.png">
 
 
@@ -305,7 +305,7 @@
       
 
       
-        <p><strong>中国海洋大学计算机技术01方向硕士研究生2018年入学考试真题</strong>，第5-2题的程序填空。代码编写的比较巧妙，从维基百科上面查到的快速排序代码没有这个简洁，特此记录在这里，方便学习回忆。</p>
+        <p><strong>中国海洋大学计算机技术01方向硕士研究生2018年入学考试真题</strong>，第5-2题的程序填空。代码编写的比较巧妙，从维基百科上面查到的快速排序代码没有这个简洁，特此记录在这里，方便学习回忆。<a id="more"></a></p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> *<span class="title">boundary</span><span class="params">(<span class="keyword">int</span> <span class="built_in">array</span>[],<span class="keyword">int</span> *startIndex, <span class="keyword">int</span> *endIndex)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> standard = *startIndex;</span><br><span class="line">	<span class="keyword">int</span> *leftIndex = startIndex;</span><br><span class="line">	<span class="keyword">int</span> *rightIndex = endIndex;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">while</span>(leftIndex &lt; rightIndex) &#123;</span><br><span class="line">		<span class="keyword">while</span>(leftIndex &lt; rightIndex &amp;&amp; *rightIndex &gt;= standard) &#123;</span><br><span class="line">			rightIndex--;</span><br><span class="line">		&#125;</span><br><span class="line">		*leftIndex = *rightIndex; <span class="comment">//[4]</span></span><br><span class="line"></span><br><span class="line">		<span class="keyword">while</span>(leftIndex &lt; rightIndex &amp;&amp; *leftIndex &lt;= standard) &#123;</span><br><span class="line">			leftIndex++;</span><br><span class="line">		&#125;</span><br><span class="line">		*rightIndex = *leftIndex;<span class="comment">//[5]</span></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	*leftIndex = standard;<span class="comment">//[6]</span></span><br><span class="line">	<span class="keyword">return</span> leftIndex;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">QuickSort</span><span class="params">(<span class="keyword">int</span> <span class="built_in">array</span>[],<span class="keyword">int</span> *startIndex,<span class="keyword">int</span> * endIndex)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> *bound = <span class="literal">NULL</span>;</span><br><span class="line">	<span class="keyword">if</span>(startIndex &gt;= endIndex) <span class="keyword">return</span> ;</span><br><span class="line"></span><br><span class="line">	bound = boundary(<span class="built_in">array</span>,startIndex,endIndex);</span><br><span class="line">	QuickSort(<span class="built_in">array</span>,startIndex,bound<span class="number">-1</span>);</span><br><span class="line">	QuickSort(<span class="built_in">array</span>,bound+<span class="number">1</span>,endIndex);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> <span class="built_in">array</span>[] = &#123;<span class="number">1</span>,<span class="number">3</span>,<span class="number">1</span>,<span class="number">7</span>,<span class="number">6</span>,<span class="number">1</span>,<span class="number">1</span>,<span class="number">8</span>,<span class="number">7</span>,<span class="number">6</span>,<span class="number">5</span>&#125;;</span><br><span class="line">	<span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">	QuickSort(<span class="built_in">array</span>,<span class="built_in">array</span>,<span class="built_in">array</span> + <span class="number">11</span>);</span><br><span class="line">	<span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; <span class="number">11</span>; ++i) <span class="built_in">printf</span>(<span class="string">"%3d"</span>,*(<span class="built_in">array</span>+i));</span><br><span class="line">	<span class="built_in">puts</span>(<span class="string">""</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><strong>运行结果如下：</strong></p>
 <p><img src="/images/quick-sort-result.png" width="400" height="400/"></p>
@@ -344,6 +344,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/09/26/daily-selection/" rel="prev" title="">
+                 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -415,7 +419,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
